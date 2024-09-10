@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+float sum(float n , float m) {
+    return n+m;
+}
+float sub(float n , float m) {
+    return n-m;
+}
+float mlpn(float n , float m) {
+    return n*m;
+}
+float dvsn(float n , float m) {
+    return n/m;
+}
+
+int main() {
+    float num1;
+    float num2;
+    int smbl;
+    cout<<"this calculater work only on two numbers \n you can perforn only four task \n 1. addition \n 2. subtraction \n 3. multiplication \n 4. division \n";
+    cout << "****Enter first number\n ";
+    cin >> num1;
+    cout << "****Enter second number\n ";
+    cin >> num2;
+    cout<<"give 1 for addition, 2 for subtraction, 3 for multiplication, 4 fordivision \n";
+    cin >> smbl ;
+    if(smbl == 1){
+        cout<<sum(num1 , num2);
+    }
+     if(smbl == 2){
+        cout<<sub(num1 , num2);
+    }
+     if(smbl == 3){
+        cout<<mlpn(num1 , num2);
+    }
+     if(smbl == 4){
+        cout<<dvsn(num1 , num2);
+    }
+    
+
+    return 0;
+}
